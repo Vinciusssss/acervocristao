@@ -1,13 +1,479 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>acervocristao</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Acervo 100 Livros Cristãos | 100 e-books em PDF com acesso imediato</title>
+  <meta name="description" content="Acervo 100 Livros Cristãos: 100 e-books selecionados sobre fé, família, propósito e vida cristã, organizados por categoria, em PDF, com acesso imediato após a compra. De R$ 85,50 por R$ 30,90." />
+  <meta name="theme-color" content="#0a1f44" />
+  <meta name="robots" content="index, follow" />
+
+  <!--
+    [PLACEHOLDER DE DOMÍNIO] Substitua TODAS as ocorrências exatas da string
+    "https://www.acervo100livroscristaos.com.br" abaixo (canonical, og:url, og:image,
+    twitter:image e JSON-LD) pelo domínio real do site antes de publicar.
+    Faça uma busca e substituição única — o valor é o mesmo em todos os lugares.
+  -->
+  <link rel="canonical" href="https://www.acervo100livroscristaos.com.br/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Acervo 100 Livros Cristãos" />
+  <meta property="og:title" content="Acervo 100 Livros Cristãos | 100 e-books em PDF com acesso imediato" />
+  <meta property="og:description" content="100 livros cristãos selecionados e organizados por categoria, em PDF, com acesso imediato. De R$ 85,50 por R$ 30,90." />
+  <meta property="og:url" content="https://www.acervo100livroscristaos.com.br/" />
+  <meta property="og:image" content="https://www.acervo100livroscristaos.com.br/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Acervo 100 Livros Cristãos" />
+  <meta name="twitter:description" content="100 e-books cristãos selecionados e organizados por categoria, em PDF, com acesso imediato." />
+  <meta name="twitter:image" content="https://www.acervo100livroscristaos.com.br/assets/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!--
+    [PLACEHOLDER: Google Tag Manager]
+    Insira o snippet oficial do GTM aqui no <head> quando tiver o ID (GTM-XXXXXXX).
+    O ID também deve ser preenchido em CONFIG.GTM_ID no script.js.
+  -->
+
+  <!-- JSON-LD: dados estruturados do produto -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Acervo 100 Livros Cristãos",
+    "description": "Coleção digital com 100 livros cristãos em PDF, organizados por categoria, com acesso imediato após a compra.",
+    "image": "https://www.acervo100livroscristaos.com.br/assets/og-image.png",
+    "brand": { "@type": "Brand", "name": "Acervo 100 Livros Cristãos" },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.acervo100livroscristaos.com.br/",
+      "priceCurrency": "BRL",
+      "price": "30.90",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!--
+    [PLACEHOLDER: Meta Pixel]
+    Insira o snippet oficial do Meta Pixel logo após a abertura do <body> quando tiver o ID.
+    O ID também deve ser preenchido em CONFIG.META_PIXEL_ID no script.js para os eventos
+    customizados (ex.: disparo de "Lead" no clique dos CTAs).
+  -->
+
+  <a class="skip-link" href="#oferta">Pular para a oferta</a>
+
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__brand">Acervo <strong>100 Livros Cristãos</strong></span>
+      <a href="#oferta" class="btn btn--ghost btn--sm js-cta" data-cta="topbar">Garantir acesso</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Para quem quer crescer na fé através da leitura</p>
+          <h1 class="hero__title">Enquanto você espera o momento certo pra ler, sua estante continua vazia de respostas.</h1>
+          <p class="hero__subtitle">
+            O <strong>Acervo 100 Livros Cristãos</strong> reúne 100 obras selecionadas — sobre fé, família,
+            propósito e vida cristã — em um único lugar, em PDF, com acesso imediato após a compra.
+          </p>
+          <a href="#oferta" class="btn btn--accent btn--lg js-cta" data-cta="hero">Quero meu acesso agora</a>
+          <p class="hero__trust">Pagamento seguro &middot; Acesso imediato &middot; Garantia de 7 dias</p>
+        </div>
+        <div class="hero__media">
+          <img
+            src="assets/hero-mockup.svg"
+            alt="Tablet exibindo a capa do Acervo 100 Livros Cristãos, com estante de livros digitais ao fundo"
+            width="560"
+            height="560"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. DORES -->
+    <section class="section section--white" aria-labelledby="dores-title">
+      <div class="container">
+        <h2 id="dores-title" class="section__title">Isso já aconteceu com você?</h2>
+        <p class="section__subtitle">Se você se identificar com pelo menos duas dessas situações, continue lendo.</p>
+
+        <div class="pain-grid">
+          <div class="pain-card">
+            <span class="pain-card__icon" aria-hidden="true">⏳</span>
+            <h3>Sem tempo de sobra</h3>
+            <p>O dia termina antes de você conseguir abrir um livro.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-card__icon" aria-hidden="true">🧭</span>
+            <h3>Não sabe por onde começar</h3>
+            <p>Tantos temas e autores que a escolha vira um bloqueio.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-card__icon" aria-hidden="true">💸</span>
+            <h3>Livro avulso pesa no bolso</h3>
+            <p>Comprar um título de cada vez nunca sai barato no fim do mês.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-card__icon" aria-hidden="true">🙏</span>
+            <h3>Falta direção espiritual na leitura</h3>
+            <p>Ninguém indica o que ler primeiro sobre oração, casamento, propósito ou doutrina.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-card__icon" aria-hidden="true">🗂️</span>
+            <h3>Estante desorganizada</h3>
+            <p>Arquivos espalhados, sem categoria e sem sequência lógica.</p>
+          </div>
+          <div class="pain-card">
+            <span class="pain-card__icon" aria-hidden="true">📖</span>
+            <h3>Começa e não termina</h3>
+            <p>Sem um caminho claro, os livros ficam pela metade.</p>
+          </div>
+        </div>
+
+        <p class="empathy-line">
+          O problema nunca foi falta de vontade. Foi a falta de um caminho claro,
+          acessível e organizado para ler o que realmente importa.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. MÉTODO / SOLUÇÃO -->
+    <section class="section section--navy" aria-labelledby="metodo-title">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">A solução</p>
+        <h2 id="metodo-title" class="section__title section__title--light">Conheça o Método de Leitura Intencional</h2>
+        <p class="section__subtitle section__subtitle--light">
+          Não adianta ter 100 livros se eles ficarem perdidos numa pasta sem ordem. Por isso, organizamos todo
+          o Acervo dentro do Método de Leitura Intencional — um jeito simples de transformar 100 livros em um
+          caminho de crescimento, no seu ritmo, sem pressão e sem culpa.
+        </p>
+
+        <div class="pillar-grid">
+          <div class="pillar-card">
+            <span class="pillar-card__number">01</span>
+            <h3>Curadoria por tema</h3>
+            <p>Livros agrupados por assunto, para você ler o que faz sentido pra fase que está vivendo.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-card__number">02</span>
+            <h3>Liberdade de ritmo</h3>
+            <p>Sem ordem obrigatória, sem prazo, sem cronograma imposto.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-card__number">03</span>
+            <h3>Acesso organizado</h3>
+            <p>Tudo em PDF, catalogado por categoria, fácil de encontrar no celular ou computador.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CHECKLIST DE BENEFÍCIOS -->
+    <section class="section section--white" aria-labelledby="beneficios-title">
+      <div class="container">
+        <h2 id="beneficios-title" class="section__title">O que você recebe</h2>
+        <ul class="checklist">
+          <li><span class="checklist__icon" aria-hidden="true">✔</span> 100 livros cristãos completos, em PDF, prontos para ler</li>
+          <li><span class="checklist__icon" aria-hidden="true">✔</span> Categorias que cobrem vida devocional, família, teologia, liderança e propósito</li>
+          <li><span class="checklist__icon" aria-hidden="true">✔</span> Formato leve, compatível com celular, tablet, computador e Kindle</li>
+          <li><span class="checklist__icon" aria-hidden="true">✔</span> Acesso liberado imediatamente após a confirmação do pagamento</li>
+          <li><span class="checklist__icon" aria-hidden="true">✔</span> Organização por tema, com navegação simples</li>
+          <li><span class="checklist__icon" aria-hidden="true">✔</span> Atualizações futuras do acervo incluídas, sem custo extra</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. QUEBRA DE OBJEÇÃO -->
+    <section class="section section--cream" aria-labelledby="objecao-title">
+      <div class="container container--narrow objection">
+        <h2 id="objecao-title" class="section__title">E se eu não tiver tempo para ler 100 livros?</h2>
+        <p>
+          Você não precisa ler tudo de uma vez, nem na ordem que aparece. O Acervo foi pensado para caber na
+          sua vida, não para competir com ela: leia um capítulo por dia, um livro por mês, ou volte a ele
+          quando precisar de uma palavra específica. Não há prova, não há prazo — só 100 oportunidades de
+          crescer, no tempo que você tiver.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. TRANSFORMAÇÃO -->
+    <section class="section section--white" aria-labelledby="transformacao-title">
+      <div class="container">
+        <h2 id="transformacao-title" class="section__title">O que muda quando você lê com intenção</h2>
+        <div class="result-grid">
+          <div class="result-card">
+            <span class="result-card__icon" aria-hidden="true">🕊️</span>
+            <h3>Crescimento espiritual</h3>
+            <p>Mais intimidade com Deus através da leitura constante da Palavra e de autores que já trilharam esse caminho.</p>
+          </div>
+          <div class="result-card">
+            <span class="result-card__icon" aria-hidden="true">📚</span>
+            <h3>Mais conhecimento bíblico</h3>
+            <p>Entenda doutrinas, contextos e interpretações com mais profundidade e segurança.</p>
+          </div>
+          <div class="result-card">
+            <span class="result-card__icon" aria-hidden="true">🔥</span>
+            <h3>Hábito de leitura</h3>
+            <p>Construa a disciplina de ler um pouco todos os dias, mesmo com uma rotina cheia.</p>
+          </div>
+          <div class="result-card">
+            <span class="result-card__icon" aria-hidden="true">🧭</span>
+            <h3>Direção para cada fase</h3>
+            <p>Encontre o livro certo para casamento, luto, propósito, liderança ou maternidade/paternidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DIFERENCIAÇÃO -->
+    <section class="section section--navy" aria-labelledby="diferenca-title">
+      <div class="container container--narrow">
+        <h2 id="diferenca-title" class="section__title section__title--light">Isso não é só mais uma pilha de PDFs</h2>
+        <p class="section__subtitle section__subtitle--light">
+          Existem por aí compilados genéricos, cheios de arquivos soltos e sem nenhuma lógica entre eles.
+          O Acervo 100 Livros Cristãos é diferente: cada livro foi selecionado e organizado por categoria,
+          dentro do Método de Leitura Intencional, para que você encontre o que precisa sem se perder em
+          pastas bagunçadas.
+        </p>
+      </div>
+    </section>
+
+    <!-- 8. CONTEÚDO / CATEGORIAS -->
+    <section class="section section--white" aria-labelledby="conteudo-title">
+      <div class="container">
+        <h2 id="conteudo-title" class="section__title">O que está dentro do Acervo</h2>
+        <p class="section__subtitle">100 livros organizados nas seguintes categorias:</p>
+
+        <!-- [PLACEHOLDER: lista real de categorias/livros] — substituir os itens abaixo pelas categorias e
+             títulos reais assim que forem definidos. A estrutura de cards pode ser mantida. -->
+        <div class="category-grid">
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 1]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 2]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 3]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 4]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 5]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 6]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 7]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+          <div class="category-card">
+            <h3>[PLACEHOLDER: nome da categoria 8]</h3>
+            <p>[PLACEHOLDER: quantidade de livros e exemplos de títulos]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. OFERTA E PREÇO -->
+    <section id="oferta" class="section section--navy" aria-labelledby="oferta-title">
+      <div class="container container--narrow">
+        <h2 id="oferta-title" class="section__title section__title--light">Seu acesso completo por um preço simbólico</h2>
+
+        <div class="price-card">
+          <p class="price-card__old">De <s>R$ 85,50</s></p>
+          <p class="price-card__new">Por <strong>R$ 30,90</strong></p>
+          <p class="price-card__installments">
+            à vista, ou em até [PLACEHOLDER: nx] no cartão
+            <!-- [PLACEHOLDER] confirmar parcelamento real disponível no checkout escolhido -->
+          </p>
+          <p class="price-card__compare">Menos do que o preço de um único livro físico avulso numa livraria.</p>
+
+          <a href="#" class="btn btn--accent btn--lg js-cta" data-cta="oferta-principal">Quero garantir meu acesso agora</a>
+          <p class="price-card__trust">Pagamento seguro &middot; Acesso imediato após a confirmação</p>
+        </div>
+
+        <div class="bonus-box">
+          <h3>Bônus inclusos</h3>
+          <p>[PLACEHOLDER: bônus reais, se houver — descrever cada um com clareza. Remover esta seção caso não haja bônus.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. PROVA SOCIAL -->
+    <section class="section section--white" aria-labelledby="depoimentos-title">
+      <div class="container">
+        <h2 id="depoimentos-title" class="section__title">Quem já está lendo, aprova</h2>
+        <p class="section__subtitle">[PLACEHOLDER: inserir depoimentos reais de clientes — substituir todos os cards abaixo por prints ou textos verdadeiros]</p>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__avatar" aria-hidden="true">??</div>
+            <p class="testimonial-card__name">[PLACEHOLDER: nome do cliente]</p>
+            <p class="testimonial-card__text">[PLACEHOLDER: depoimento real destacando a facilidade de acesso aos livros]</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__avatar" aria-hidden="true">??</div>
+            <p class="testimonial-card__name">[PLACEHOLDER: nome do cliente]</p>
+            <p class="testimonial-card__text">[PLACEHOLDER: depoimento real destacando o crescimento espiritual percebido]</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__avatar" aria-hidden="true">??</div>
+            <p class="testimonial-card__name">[PLACEHOLDER: nome do cliente]</p>
+            <p class="testimonial-card__text">[PLACEHOLDER: depoimento real destacando a variedade de temas do acervo]</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__avatar" aria-hidden="true">??</div>
+            <p class="testimonial-card__name">[PLACEHOLDER: nome do cliente]</p>
+            <p class="testimonial-card__text">[PLACEHOLDER: depoimento real destacando o custo-benefício da compra]</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__avatar" aria-hidden="true">??</div>
+            <p class="testimonial-card__name">[PLACEHOLDER: nome do cliente]</p>
+            <p class="testimonial-card__text">[PLACEHOLDER: depoimento real destacando a organização por categorias]</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__avatar" aria-hidden="true">??</div>
+            <p class="testimonial-card__name">[PLACEHOLDER: nome do cliente]</p>
+            <p class="testimonial-card__text">[PLACEHOLDER: depoimento real destacando o hábito de leitura criado]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. GARANTIA -->
+    <section class="section section--cream" aria-labelledby="garantia-title">
+      <div class="container container--narrow guarantee">
+        <span class="guarantee__icon" aria-hidden="true">🛡️</span>
+        <h2 id="garantia-title" class="section__title">Garantia incondicional de 7 dias</h2>
+        <p>
+          Se por qualquer motivo você sentir que o Acervo não é para você, é só pedir reembolso em até 7 dias
+          após a compra. Sem perguntas, sem burocracia, sem letras miúdas.
+        </p>
+      </div>
+    </section>
+
+    <!-- 12. URGÊNCIA -->
+    <section class="section section--navy" aria-labelledby="urgencia-title">
+      <div class="container container--narrow urgency">
+        <h2 id="urgencia-title" class="section__title section__title--light">Essa condição não fica disponível para sempre</h2>
+        <p class="section__subtitle section__subtitle--light">
+          O valor promocional de R$ 30,90 é por tempo limitado.
+          <!-- [PLACEHOLDER] confirmar a data/hora real de encerramento da promoção em CONFIG.PROMO_END no script.js -->
+        </p>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown__unit"><span data-cd="days">00</span><small>dias</small></div>
+          <div class="countdown__unit"><span data-cd="hours">00</span><small>horas</small></div>
+          <div class="countdown__unit"><span data-cd="minutes">00</span><small>min</small></div>
+          <div class="countdown__unit"><span data-cd="seconds">00</span><small>seg</small></div>
+        </div>
+        <noscript><p>Promoção por tempo limitado.</p></noscript>
+        <a href="#" class="btn btn--accent btn--lg js-cta" data-cta="urgencia">Quero aproveitar agora</a>
+      </div>
+    </section>
+
+    <!-- 13. FAQ -->
+    <section class="section section--white" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <h2 id="faq-title" class="section__title">Perguntas frequentes</h2>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Como recebo os livros depois da compra?</summary>
+            <p>Assim que o pagamento é confirmado, você recebe acesso imediato aos 100 livros em PDF, organizados por categoria, para baixar ou ler direto no navegador.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Por quanto tempo tenho acesso?</summary>
+            <p>O acesso é vitalício: depois da compra, o Acervo é seu para sempre, incluindo as atualizações futuras.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Consigo ler no celular, tablet ou Kindle?</summary>
+            <p>Sim. Os arquivos em PDF são compatíveis com celular, tablet, computador e a maioria dos leitores digitais, incluindo Kindle.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O pagamento é seguro?</summary>
+            <p>Sim. Toda a compra é processada em ambiente seguro e criptografado, através de [PLACEHOLDER: nome da plataforma de checkout].</p>
+          </details>
+          <details class="faq__item">
+            <summary>E se eu não gostar? Tem reembolso?</summary>
+            <p>Tem sim. Você conta com 7 dias de garantia incondicional a partir da compra para pedir reembolso total, sem burocracia.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Como faço se tiver alguma dúvida ou problema?</summary>
+            <p>É só entrar em contato pelo nosso suporte em [PLACEHOLDER: e-mail/WhatsApp de suporte] que respondemos o mais rápido possível.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="section section--cream" aria-labelledby="final-title">
+      <div class="container container--narrow final-cta">
+        <h2 id="final-title" class="section__title">Sua próxima leitura pode mudar sua caminhada com Deus.</h2>
+        <a href="#" class="btn btn--accent btn--lg js-cta" data-cta="final">Quero meu Acervo agora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 14. RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Acervo 100 Livros Cristãos</p>
+      <p class="footer__legal">
+        © <span id="footer-year">2026</span> Acervo 100 Livros Cristãos.
+        [PLACEHOLDER: Nome do responsável / Razão Social — CNPJ 00.000.000/0000-00]
+      </p>
+      <nav class="footer__links" aria-label="Links institucionais">
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+      </nav>
+      <p class="footer__support">Suporte: [PLACEHOLDER: e-mail/WhatsApp de suporte]</p>
+    </div>
+  </footer>
+
+  <!-- Barra de CTA fixa (mobile) -->
+  <div class="mobile-cta" role="region" aria-label="Comprar agora">
+    <div class="mobile-cta__price">
+      <span class="mobile-cta__old"><s>R$ 85,50</s></span>
+      <span class="mobile-cta__new">R$ 30,90</span>
+    </div>
+    <a href="#" class="btn btn--accent btn--sm js-cta" data-cta="mobile-bar">Quero acessar</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

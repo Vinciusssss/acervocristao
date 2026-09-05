@@ -1,32 +1,46 @@
-# React + TypeScript + Vite
+# Acervo 100 Livros Cristãos — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page de vendas para o produto **Acervo 100 Livros Cristãos** (100 e-books em PDF,
+entrega digital imediata). Site estático, sem build — HTML, CSS e JS puros.
 
-Currently, two official plugins are available:
+## Estrutura
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+index.html          página principal (todas as seções da oferta)
+privacidade.html     política de privacidade (stub — preencher conteúdo real)
+termos.html          termos de uso (stub — preencher conteúdo real)
+styles.css           estilos (mobile-first)
+script.js            configuração central + interações (CTA, contador, ano do rodapé)
+assets/              favicon, mockup do produto e imagem de compartilhamento (OG)
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Antes de publicar
+
+1. **Checkout**: edite `CHECKOUT_URL` no topo de `script.js`. Todos os botões CTA usam esse
+   valor automaticamente.
+2. **Domínio real**: em `index.html`, substitua toda ocorrência exata de
+   `https://www.acervo100livroscristaos.com.br` (canonical, `og:url`, `og:image`, JSON-LD)
+   pelo domínio real do site.
+3. **Categorias/livros**: preencha a seção "O que está dentro do Acervo" com a lista real de
+   categorias e títulos (marcada com `[PLACEHOLDER]`).
+4. **Depoimentos**: substitua os 6 cards de depoimento pelos textos/prints reais dos clientes.
+5. **Bônus**: preencha ou remova a seção de bônus, conforme o que for oferecido de fato.
+6. **Urgência**: `PROMO_END` em `script.js` deve ser a data/hora real de encerramento da
+   promoção — não usar uma data falsa.
+7. **Tracking**: preencha `META_PIXEL_ID` e `GTM_ID` em `script.js` e cole os snippets oficiais
+   nos comentários `[PLACEHOLDER]` do `<head>`/`<body>` de `index.html`.
+8. Preencha os demais campos marcados como `[PLACEHOLDER]` (parcelamento, plataforma de
+   checkout, suporte, CNPJ/responsável, textos de privacidade e termos).
+
+## Rodar localmente
+
+Qualquer servidor estático funciona, por exemplo:
+
+```bash
+npx serve .
+```
+
+## Deploy
+
+Site 100% estático — funciona direto na Vercel ou Netlify sem configuração de build
+(publish directory: raiz do projeto).

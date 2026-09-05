@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123064"/>
+      <stop offset="100%" stop-color="#08152f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5c451"/>
+      <stop offset="100%" stop-color="#e0a92f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- decorative book stack -->
+  <g transform="translate(70,420)">
+    <rect x="0" y="60" width="220" height="34" rx="6" fill="#f5c451" opacity="0.9" transform="rotate(-6 110 77)"/>
+    <rect x="10" y="24" width="220" height="34" rx="6" fill="#ffffff" opacity="0.95" transform="rotate(-3 120 41)"/>
+    <rect x="20" y="-10" width="220" height="34" rx="6" fill="#8fa3c9" opacity="0.9" transform="rotate(2 130 7)"/>
+  </g>
+
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#ffffff">
+    <rect x="380" y="150" width="60" height="6" rx="3" fill="url(#gold)"/>
+    <text x="380" y="222" font-size="48" font-weight="700">Acervo 100</text>
+    <text x="380" y="282" font-size="48" font-weight="700" fill="#f5c451">Livros Cristãos</text>
+    <text x="380" y="336" font-size="24" font-family="Arial, sans-serif" fill="#cdd8ee">100 e-books em PDF · entrega digital imediata</text>
+  </g>
+
+  <g transform="translate(380,390)" font-family="Arial, sans-serif">
+    <rect x="0" y="0" width="230" height="56" rx="28" fill="url(#gold)"/>
+    <text x="115" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0a1f44">Quero meu acesso</text>
+  </g>
+
+  <g transform="translate(990,60)">
+    <circle cx="55" cy="55" r="55" fill="url(#gold)"/>
+    <text x="55" y="50" text-anchor="middle" font-size="24" font-weight="800" fill="#0a1f44" font-family="Arial, sans-serif">100</text>
+    <text x="55" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#0a1f44" font-family="Arial, sans-serif">LIVROS</text>
+  </g>
+</svg>
