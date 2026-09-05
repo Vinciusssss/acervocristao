@@ -21,16 +21,13 @@ assets/              favicon, mockup do produto e imagem de compartilhamento (OG
 2. **Domínio real**: em `index.html`, substitua toda ocorrência exata de
    `https://www.acervo100livroscristaos.com.br` (canonical, `og:url`, `og:image`, JSON-LD)
    pelo domínio real do site.
-3. **Categorias/livros**: preencha a seção "O que está dentro do Acervo" com a lista real de
-   categorias e títulos (marcada com `[PLACEHOLDER]`).
-4. **Depoimentos**: substitua os 6 cards de depoimento pelos textos/prints reais dos clientes.
-5. **Bônus**: preencha ou remova a seção de bônus, conforme o que for oferecido de fato.
-6. **Urgência**: `PROMO_END` em `script.js` deve ser a data/hora real de encerramento da
+3. **Bônus**: preencha ou remova a seção de bônus, conforme o que for oferecido de fato.
+4. **Urgência**: `PROMO_END` em `script.js` deve ser a data/hora real de encerramento da
    promoção — não usar uma data falsa.
-7. **Tracking**: preencha `META_PIXEL_ID` e `GTM_ID` em `script.js` e cole os snippets oficiais
+5. **Tracking**: preencha `META_PIXEL_ID` e `GTM_ID` em `script.js` e cole os snippets oficiais
    nos comentários `[PLACEHOLDER]` do `<head>`/`<body>` de `index.html`.
-8. Preencha os demais campos marcados como `[PLACEHOLDER]` (parcelamento, plataforma de
-   checkout, suporte, CNPJ/responsável, textos de privacidade e termos).
+6. Preencha os demais campos marcados como `[PLACEHOLDER]` (parcelamento e textos de
+   privacidade/termos).
 
 ## Rodar localmente
 

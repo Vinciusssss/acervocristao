@@ -404,28 +404,6 @@ a {
   margin: 0;
 }
 
-/* Categorias */
-.category-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-.category-card {
-  border: 1px solid rgba(10, 31, 68, 0.12);
-  border-radius: var(--radius-md);
-  padding: 20px;
-  background: var(--navy-soft);
-}
-.category-card h3 {
-  font-size: 1rem;
-  margin-bottom: 6px;
-}
-.category-card p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin: 0;
-}
-
 /* Oferta / preço */
 .price-card {
   background: var(--white);
@@ -478,42 +456,6 @@ a {
 .bonus-box p {
   margin: 0;
   font-size: 0.9rem;
-}
-
-/* Depoimentos */
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
-.testimonial-card {
-  background: var(--navy-soft);
-  border-radius: var(--radius-md);
-  padding: 22px;
-}
-.testimonial-card__avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--navy);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.8rem;
-  margin-bottom: 12px;
-}
-.testimonial-card__name {
-  font-weight: 700;
-  margin: 0 0 6px;
-  color: var(--navy);
-  font-size: 0.95rem;
-}
-.testimonial-card__text {
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  margin: 0;
 }
 
 /* Garantia */
@@ -643,9 +585,6 @@ a {
   color: var(--text-on-navy);
   text-decoration: underline;
 }
-.footer__support {
-  margin: 0;
-}
 
 /* Barra de CTA fixa no mobile */
 .mobile-cta {
@@ -656,27 +595,53 @@ a {
   z-index: 50;
   background: var(--white);
   border-top: 1px solid rgba(10, 31, 68, 0.1);
-  box-shadow: 0 -6px 20px rgba(10, 31, 68, 0.12);
-  padding: 10px 16px;
-  padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -8px 24px rgba(10, 31, 68, 0.16);
+  padding: 12px 16px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
+}
+.mobile-cta__badge {
+  flex-shrink: 0;
+  background: var(--navy);
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: var(--radius-full);
 }
 .mobile-cta__price {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
+  margin-right: auto;
 }
 .mobile-cta__old {
   font-size: 0.72rem;
   color: var(--text-muted);
 }
 .mobile-cta__new {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--navy);
+}
+.mobile-cta__btn {
+  animation: mobile-cta-pulse 2.2s ease-in-out infinite;
+}
+@keyframes mobile-cta-pulse {
+  0%, 100% {
+    box-shadow: var(--shadow-btn);
+  }
+  50% {
+    box-shadow: 0 10px 24px rgba(224, 169, 47, 0.6);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-cta__btn {
+    animation: none;
+  }
 }
 
 /* ============ Tablet e acima ============ */
@@ -723,12 +688,6 @@ a {
   .result-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .category-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .mobile-cta {
     display: none;
   }
@@ -744,12 +703,6 @@ a {
   }
   .result-grid {
     grid-template-columns: repeat(4, 1fr);
-  }
-  .category-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .testimonial-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
