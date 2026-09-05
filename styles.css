@@ -496,10 +496,12 @@ a:focus-visible {
 }
 .offer-box__price {
   font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 7vw, 3rem);
+  font-size: clamp(3rem, 12vw, 4.5rem);
   font-weight: 700;
   color: var(--gold);
-  margin: 4px 0 10px;
+  text-shadow: 0 0 30px rgba(245, 196, 81, 0.45);
+  margin: 6px 0 14px;
+  line-height: 1.1;
 }
 .offer-box__compare {
   font-size: 0.85rem;
