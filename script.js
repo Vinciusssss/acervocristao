@@ -2,8 +2,7 @@
 // CONFIGURAÇÃO CENTRAL — altere apenas aqui.
 // ============================================================
 const CONFIG = {
-  // [PLACEHOLDER] Insira a URL real de checkout. Todos os botões CTA usam este valor.
-  CHECKOUT_URL: "https://SEU-CHECKOUT-AQUI.com/acervo-100-livros-cristaos",
+  CHECKOUT_URL: "https://ggcheckout.app/checkout/v5/bXgg0cIMvYfmO5IjoAQX",
 
   // [PLACEHOLDER] Data/hora real de encerramento da promoção (ISO 8601, com fuso).
   // Só mantenha o contador visível se essa data for verdadeira (sem escassez falsa).

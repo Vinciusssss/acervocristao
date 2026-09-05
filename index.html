@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Acervo 100 Livros Cristãos | 100 e-books em PDF com acesso imediato</title>
-  <meta name="description" content="Acervo 100 Livros Cristãos: 100 e-books selecionados sobre fé, família, propósito e vida cristã, organizados por categoria, em PDF, com acesso imediato após a compra. De R$ 85,50 por R$ 30,90." />
+  <meta name="description" content="Acervo 100 Livros Cristãos: 100 e-books selecionados sobre fé, família, propósito e vida cristã, organizados por categoria, em PDF, com acesso imediato após a compra. De R$ 85,50 por R$ 35,90." />
   <meta name="theme-color" content="#0a1f44" />
   <meta name="robots" content="index, follow" />
 
@@ -21,7 +21,7 @@
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Acervo 100 Livros Cristãos" />
   <meta property="og:title" content="Acervo 100 Livros Cristãos | 100 e-books em PDF com acesso imediato" />
-  <meta property="og:description" content="100 livros cristãos selecionados e organizados por categoria, em PDF, com acesso imediato. De R$ 85,50 por R$ 30,90." />
+  <meta property="og:description" content="100 livros cristãos selecionados e organizados por categoria, em PDF, com acesso imediato. De R$ 85,50 por R$ 35,90." />
   <meta property="og:url" content="https://www.acervo100livroscristaos.com.br/" />
   <meta property="og:image" content="https://www.acervo100livroscristaos.com.br/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
@@ -34,8 +34,8 @@
   <meta name="twitter:image" content="https://www.acervo100livroscristaos.com.br/assets/og-image.png" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/logo-192.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,6 +43,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ybc2e3ag0b");
+  </script>
 
   <!--
     [PLACEHOLDER: Google Tag Manager]
@@ -63,7 +72,7 @@
       "@type": "Offer",
       "url": "https://www.acervo100livroscristaos.com.br/",
       "priceCurrency": "BRL",
-      "price": "30.90",
+      "price": "35.90",
       "availability": "https://schema.org/InStock"
     }
   }
@@ -83,7 +92,10 @@
   <!-- Barra superior -->
   <header class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__brand">Acervo <strong>100 Livros Cristãos</strong></span>
+      <span class="topbar__brand">
+        <img src="assets/logo.webp" alt="Verbo de Fé" width="32" height="32" class="topbar__logo" />
+        <span class="topbar__brand-text">Acervo <strong>100 Livros Cristãos</strong></span>
+      </span>
       <a href="#oferta" class="btn btn--ghost btn--sm js-cta" data-cta="topbar">Garantir acesso</a>
     </div>
   </header>
@@ -104,14 +116,17 @@
           <p class="hero__trust">Pagamento seguro &middot; Acesso imediato &middot; Garantia de 7 dias</p>
         </div>
         <div class="hero__media">
-          <img
-            src="assets/hero-mockup.svg"
-            alt="Tablet exibindo a capa do Acervo 100 Livros Cristãos, com estante de livros digitais ao fundo"
-            width="560"
-            height="560"
-            loading="eager"
-            fetchpriority="high"
-          />
+          <picture>
+            <source srcset="assets/hero-product.webp" type="image/webp" />
+            <img
+              src="assets/hero-product.jpg"
+              alt="Capa do Acervo Cristão (Verbo de Fé): mockup com as capas dos 100 livros cristãos em PDF que compõem a coleção"
+              width="900"
+              height="1115"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
       </div>
     </section>
@@ -252,14 +267,28 @@
 
     <!-- 7. DIFERENCIAÇÃO -->
     <section class="section section--navy" aria-labelledby="diferenca-title">
-      <div class="container container--narrow">
-        <h2 id="diferenca-title" class="section__title section__title--light">Isso não é só mais uma pilha de PDFs</h2>
-        <p class="section__subtitle section__subtitle--light">
-          Existem por aí compilados genéricos, cheios de arquivos soltos e sem nenhuma lógica entre eles.
-          O Acervo 100 Livros Cristãos é diferente: cada livro foi selecionado e organizado por categoria,
-          dentro do Método de Leitura Intencional, para que você encontre o que precisa sem se perder em
-          pastas bagunçadas.
-        </p>
+      <div class="container diferenca__grid">
+        <div class="diferenca__media">
+          <picture>
+            <source srcset="assets/differentiation-shelf.webp" type="image/webp" />
+            <img
+              src="assets/differentiation-shelf.jpg"
+              alt="Coleção Acervo Cristão (Verbo de Fé) organizada como uma estante premium, com capas em azul-marinho e dourado"
+              width="800"
+              height="993"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="diferenca__copy">
+          <h2 id="diferenca-title" class="section__title section__title--light">Isso não é só mais uma pilha de PDFs</h2>
+          <p class="section__subtitle section__subtitle--light">
+            Existem por aí compilados genéricos, cheios de arquivos soltos e sem nenhuma lógica entre eles.
+            O Acervo 100 Livros Cristãos é diferente: cada livro foi selecionado e organizado por categoria,
+            dentro do Método de Leitura Intencional, para que você encontre o que precisa sem se perder em
+            pastas bagunçadas.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -315,7 +344,7 @@
 
         <div class="price-card">
           <p class="price-card__old">De <s>R$ 85,50</s></p>
-          <p class="price-card__new">Por <strong>R$ 30,90</strong></p>
+          <p class="price-card__new">Por <strong>R$ 35,90</strong></p>
           <p class="price-card__installments">
             à vista, ou em até [PLACEHOLDER: nx] no cartão
             <!-- [PLACEHOLDER] confirmar parcelamento real disponível no checkout escolhido -->
@@ -391,7 +420,7 @@
       <div class="container container--narrow urgency">
         <h2 id="urgencia-title" class="section__title section__title--light">Essa condição não fica disponível para sempre</h2>
         <p class="section__subtitle section__subtitle--light">
-          O valor promocional de R$ 30,90 é por tempo limitado.
+          O valor promocional de R$ 35,90 é por tempo limitado.
           <!-- [PLACEHOLDER] confirmar a data/hora real de encerramento da promoção em CONFIG.PROMO_END no script.js -->
         </p>
         <div class="countdown" id="countdown" aria-live="polite">
@@ -452,6 +481,7 @@
   <!-- 14. RODAPÉ -->
   <footer class="footer">
     <div class="container footer__inner">
+      <img src="assets/logo.webp" alt="Verbo de Fé" width="56" height="56" class="footer__logo" />
       <p class="footer__brand">Acervo 100 Livros Cristãos</p>
       <p class="footer__legal">
         © <span id="footer-year">2026</span> Acervo 100 Livros Cristãos.
@@ -469,7 +499,7 @@
   <div class="mobile-cta" role="region" aria-label="Comprar agora">
     <div class="mobile-cta__price">
       <span class="mobile-cta__old"><s>R$ 85,50</s></span>
-      <span class="mobile-cta__new">R$ 30,90</span>
+      <span class="mobile-cta__new">R$ 35,90</span>
     </div>
     <a href="#" class="btn btn--accent btn--sm js-cta" data-cta="mobile-bar">Quero acessar</a>
   </div>
