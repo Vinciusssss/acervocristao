@@ -102,6 +102,17 @@ a {
 .btn:hover {
   transform: translateY(-2px);
 }
+.btn:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--gold-dark);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
+}
+.faq__item summary:focus-visible {
+  outline: 3px solid var(--gold-dark);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
 .btn--lg {
   padding: 16px 32px;
   font-size: 1.05rem;
@@ -109,14 +120,6 @@ a {
 .btn--sm {
   padding: 10px 18px;
   font-size: 0.9rem;
-}
-.btn--primary {
-  background: var(--navy);
-  color: var(--white);
-  box-shadow: var(--shadow-soft);
-}
-.btn--primary:hover {
-  filter: brightness(1.15);
 }
 .btn--accent {
   background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
@@ -292,6 +295,11 @@ a {
   background: var(--navy-soft);
   border-radius: var(--radius-md);
   padding: 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pain-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
 }
 .pain-card__icon {
   font-size: 1.6rem;
@@ -329,6 +337,11 @@ a {
   border: 1px solid rgba(245, 196, 81, 0.25);
   border-radius: var(--radius-md);
   padding: 26px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.pillar-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.1);
 }
 .pillar-card__number {
   font-family: var(--font-heading);
@@ -398,6 +411,11 @@ a {
   padding: 26px 18px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(10, 31, 68, 0.16);
 }
 .result-card__icon {
   font-size: 2rem;
@@ -562,6 +580,10 @@ a {
   border-radius: var(--radius-md);
   padding: 16px 20px;
   background: var(--white);
+  transition: border-color 0.2s ease;
+}
+.faq__item:hover {
+  border-color: rgba(224, 169, 47, 0.5);
 }
 .faq__item summary {
   cursor: pointer;
@@ -756,11 +778,32 @@ a {
   }
 }
 
+/* Revelação suave ao rolar */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
   .btn {
     transition: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .pain-card:hover,
+  .pillar-card:hover,
+  .result-card:hover {
+    transform: none;
   }
 }

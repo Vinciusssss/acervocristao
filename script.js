@@ -66,3 +66,52 @@ if (footerYear) {
   tick();
   setInterval(tick, 1000);
 })();
+
+// Revelação suave dos blocos de conteúdo ao rolar a página.
+// Checagem manual no scroll (em vez de depender só de IntersectionObserver) para
+// garantir que nenhuma seção fique presa em opacidade zero em rolagens rápidas.
+(function initScrollReveal() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let targets = Array.from(document.querySelectorAll("main > section:not(.hero) > .container"));
+  if (prefersReducedMotion || targets.length === 0) {
+    targets.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+
+  targets.forEach((el) => el.classList.add("reveal"));
+
+  let ticking = false;
+  function revealVisible() {
+    const viewportHeight = window.innerHeight;
+    targets = targets.filter((el) => {
+      const rect = el.getBoundingClientRect();
+      const isVisible = rect.top < viewportHeight - 60 && rect.bottom > 0;
+      if (isVisible) {
+        el.classList.add("is-visible");
+        return false;
+      }
+      return true;
+    });
+    ticking = false;
+    if (targets.length === 0) {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    }
+  }
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(revealVisible);
+    }
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  window.addEventListener("load", revealVisible);
+  revealVisible();
+
+  // Rede de segurança: nunca deixar conteúdo preso invisível, aconteça o que acontecer.
+  setTimeout(() => {
+    targets.forEach((el) => el.classList.add("is-visible"));
+  }, 4000);
+})();
