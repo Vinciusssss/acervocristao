@@ -165,7 +165,7 @@ a:focus-visible {
   flex-shrink: 0;
 }
 .topbar__brand-text {
-  display: none;
+  display: inline;
 }
 
 /* Hero */
